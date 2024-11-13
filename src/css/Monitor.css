@@ -6,7 +6,14 @@ body, html {
     font-family: Arial, sans-serif;
     background-color: #e6e1f9;
 }
-
+/* .textt{
+    margin: 1rem;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #e6e1f9;
+} */
 .monitoring-container {
     width: 100%;
     min-height: 100vh;
@@ -15,7 +22,7 @@ body, html {
     align-items: center;
     background-color: #e6e1f9;
 }
-
+/*  */
 .monitoring-header {
     background-color: #4a3f84;
     color: white;
@@ -49,6 +56,15 @@ body, html {
     margin-top: 10px; /* Aligns the top margin of cards */
     margin-bottom: 10px; /* Creates space below each card */
     text-align: center;
+    height: auto; /* Adjust height based on content */
+}
+.cardx {
+    /* margin-top: 20rem; */
+    font-size: x-large;
+    padding: 20px;
+    margin-top: 10px; /* Aligns the top margin of cards */
+    margin-bottom: 10px; /* Creates space below each card */
+    text-align: justify;
     height: 12rem; /* Adjust height based on content */
 }
 
@@ -56,7 +72,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Aligns buttons to the start of the container */
-    margin-left: 200px; /* Left margin for buttons */
+    margin-left: 170px; /* Left margin for buttons */
 }
 
 .function-button {
@@ -75,3 +91,18 @@ body, html {
 .right-panel .card:first-of-type {
     margin-top: 10px; /* Ensures the top card is aligned with the left panel's top card */
 }
+.functions div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .function-button {
+    margin-right: 10px;
+  }
+  
+  span {
+    font-weight: bold;
+    color: #6200ea;
+  }
+  

@@ -19,18 +19,19 @@ const PerformanceAnalysis = () => {
   return (
     <Box
       sx={{
-        backgroundColor: '#e6f2ff', // Very light blue color for the background
+        backgroundColor: '#cac5df', // Very light blue color for the background
         minHeight: '100vh', // Ensures it covers the full height
         padding: 4, // Adds padding around the content
       }}
     >
       {/* Header */}
-      <Typography variant="h3" align="center" sx={{ mb: 4 }}>
-        My Performance Analysis
-      </Typography>
+      <Typography variant="h3" align="center" sx={{ mt: 3, mb: 6 }}>
+  My Performance Analysis
+</Typography>
+
 
       {/* Personal Dashboard Section */}
-      <Grid container spacing={3} sx={{ mb: 4, backgroundColor: '#e0f7fa', padding: 3, borderRadius: 2 }}>
+      <Grid container spacing={3} sx={{ mb: 4, backgroundColor: '#f8f7f9', padding: 3, borderRadius: 2 }}>
         <Grid item xs={12}>
           <Typography variant="h5" gutterBottom align="center">
             Your Personal Dashboard
@@ -83,7 +84,7 @@ const PerformanceAnalysis = () => {
       <Grid container spacing={3}>
         {/* Week-wise Test Scores */}
         <Grid item xs={12} md={6}>
-          <Card sx={{ padding: 2, backgroundColor: '#e0f7fa', boxShadow: 3, minHeight: '400px' }}> {/* Added minHeight */}
+          <Card sx={{ padding: 2, backgroundColor: '#ffffff', boxShadow: 3, minHeight: '400px' }}> {/* Added minHeight */}
             <CardContent>
               <Typography variant="h5" gutterBottom>
                 Week wise test scores
@@ -103,7 +104,7 @@ const PerformanceAnalysis = () => {
 
         {/* Attendance Calendar */}
         <Grid item xs={12} md={6}>
-          <Card sx={{ padding: 2, backgroundColor: '#e0f7fa', boxShadow: 3, minHeight: '400px' }}> {/* Added minHeight */}
+          <Card sx={{ padding: 2, backgroundColor: '#ffffff', boxShadow: 3, minHeight: '400px' }}> {/* Added minHeight */}
             <CardContent>
               <Typography variant="h5" gutterBottom>
                 Your Class Attendance
