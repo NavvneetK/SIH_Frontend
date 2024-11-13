@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../css/Leaderboard.css';
+import leaderboardImage from '../assets/image.jpg'; // Import the image file
 
 const Leaderboard = () => {
   const [leaderboard, setLeaderboard] = useState([]);
@@ -23,10 +24,13 @@ const Leaderboard = () => {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className="container">
-      <h1>Student Leaderboard</h1>
+    <div className="leaderboard-container">
+      {/* Include the image at the top of the Leaderboard */}
+      <img src={leaderboardImage} alt="Leaderboard Header" className="leaderboard-image" />
+
+      <h1 className="leaderboard-title">Student Leaderboard</h1>
       <div className="table-container">
-        <table>
+        <table className="leaderboard-table">
           <thead>
             <tr>
               <th>Rank</th>
@@ -37,8 +41,8 @@ const Leaderboard = () => {
             </tr>
           </thead>
           <tbody>
-            {leaderboard.map(student => (
-              <tr key={student['Student ID']}>
+            {leaderboard.map((student, index) => (
+              <tr key={index} className={index % 2 === 1 ? 'highlight-row' : ''}>
                 <td>{student['Rank']}</td>
                 <td>
                   {student['Profile Picture URL'] ? (

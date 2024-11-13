@@ -1,0 +1,10 @@
+/* src/css/attendance.css */
+.present-day {
+  background-color: #4CAF50 !important; /* Green for present days */
+  color: white !important;
+}
+
+.absent-day {
+  background-color: #F44336 !important; /* Red for absent days */
+  color: white !important;
+}

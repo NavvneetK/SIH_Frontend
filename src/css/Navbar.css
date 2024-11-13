@@ -1,48 +1,133 @@
+/* Navbar styling */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #fff;
-    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.1);
-    height: 2.8rem;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  height: 2.8rem;
+}
 
-.nit-logo{
+.nit-logo {
   width: 4rem;
   height: 4rem;
   margin: 0;
   padding: 0;
 }
-  
 
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-  }
-  
-  .nav-links li {
-    margin-left: 2rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .get-started-btn {
-    padding: 10px 20px;
-    background-color: #d54e14;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-  }
- 
-.nav-links{
+.nav-links {
+  display: flex;
+  list-style: none;
   font-size: 1.5rem;
   font-family: 'Times New Roman', Times, serif;
   margin: 0;
 }
-  
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.get-started-container {
+  position: relative;
+}
+
+.get-started-btn {
+  padding: 10px 20px;
+  background-color: #d54e14;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.get-started-btn:hover {
+  background-color: #c04811;
+}
+
+/* Styles for login options dropdown */
+.login-options {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-options button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.login-options button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styles for login dialog box */
+.login-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.dialog-content h2 {
+  margin-bottom: 20px;
+}
+
+.dialog-content input {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-btn,
+.close-btn {
+  background-color: #d54e14;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-btn {
+  background-color: #757575;
+}
+
+.login-btn:hover {
+  background-color: #c04811;
+}
+
+.close-btn:hover {
+  background-color: #616161;
+}
